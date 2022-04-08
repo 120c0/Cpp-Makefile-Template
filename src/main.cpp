@@ -1,7 +1,7 @@
-#include <iostream>
+#include <HelloWorld.hpp>
 
 int main(int, char *const[])
 {
-  std::cout << "Hello, World! This template is recommended for use in Linux." << std::endl;
+  std::cout << HelloWorld();
   return EXIT_SUCCESS;
 }

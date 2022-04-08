@@ -1,5 +1,7 @@
 # How to build
-### make BUILD=debug
-### make BUILD=realase
+#### make BUILD=debug
+#### make BUILD=realase
 # How to clean
-### make clean
+#### make clean
+# Gerate folders with Makefile
+#### make setup

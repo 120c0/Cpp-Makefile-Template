@@ -29,3 +29,5 @@ all: $(CPPFILES) $(OBJECTS)
 
 clean:
 	$(RM)  $(TARGET) $(BIN_DIR)/*.o $(OBJECTS)
+setup:
+	mkdir -p bin include libs assets
