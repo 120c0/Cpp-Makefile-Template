@@ -18,16 +18,15 @@ endif
 
 %.o: %.cpp
 	$(CXX) $(CPPFLAGS) -c -o $@ $<
-	$(MV) $@ $(BIN_DIR)
 
 $(TARGET): $(OBJECTS)
-	$(CXX) -o $@ $(wildcard $(BIN_DIR)/*.o) $(LIBS)
+	$(CXX) -o $@ $^ $(LIBS)
 
 all: $(CPPFILES) $(OBJECTS)
 
 .PHONY: $(BIN_DIR)
 
 clean:
-	$(RM)  $(TARGET) $(BIN_DIR)/*.o $(OBJECTS)
+	$(RM)  $(TARGET) $(OBJECTS)
 setup:
-	mkdir -p bin include libs assets
+	mkdir -p include libs assets
